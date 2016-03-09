@@ -10,19 +10,26 @@
 #define Array_h
 
 #include <stdio.h>
+#include "Object.h"
+
+typedef Object* AnyPointer;
 
 typedef struct _Array{
     int length_;
     int capacity_;
-    int *values_;
+    AnyPointer *values_;
 } Array;
 
 Array *ArrayCreat();
 
 int ArrayGetLength(Array *arr);
 
-void ArrayAdd(Array *arr,int value);
+void ArrayAdd(Array *arr,AnyPointer value);
 
-int ArrayGet(Array *arr, int index);
+void ArrayRemove(Array *arr,int index);
+
+AnyPointer ArrayGet(Array *arr, int index);
+
+void ArrayDestroy(Array *arr);
 
 #endif /*Array_h*/

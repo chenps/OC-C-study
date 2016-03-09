@@ -12,8 +12,8 @@
 #include <assert.h>
 
 
-static int *allocMemoryByCapacity(Array *arr){
-    return malloc(sizeof(int)*arr->capacity_);
+static AnyPointer *allocMemoryByCapacity(Array *arr){
+    return malloc(sizeof(AnyPointer)*arr->capacity_);
 }
 
 Array *ArrayCreat(){
@@ -30,19 +30,35 @@ int ArrayGetLength(Array *arr){
 }
 
 
-void ArrayAdd(Array *arr,int value){
+void ArrayAdd(Array *arr,AnyPointer value){
     if (arr->length_>=arr->capacity_) {
         arr->capacity_*=2;
-        int *oldValues = arr->values_;
+        AnyPointer *oldValues = arr->values_;
         arr->values_=allocMemoryByCapacity(arr);
-        memcpy(arr->values_,oldValues,arr->length_*sizeof(int));
+        memcpy(arr->values_,oldValues,arr->length_*sizeof(AnyPointer));
         free(oldValues);
     }
     arr->values_[arr->length_]=value;
+    arr->length_++;
+    OBJECT_RETAIN(arr);
+}
+
+void ArrayRemove(Array *arr,int index){
+    assert(index>=0&&index<arr->length_);
+    OBJECT_RELEASS(ArrayGet(arr, index));
+    arr->length_--;
+    for (int i=index; i<arr->length_; i++) {
+        arr->values_[i]=arr->values_[i+1];
+    }
+}
+
+AnyPointer ArrayGet(Array *arr, int index){
+    assert(index>=0&&index<arr->length_);//断言
+    return arr->values_[index];
 }
 
 
-int ArrayGet(Array *arr, int index){
-    assert(index>=0&&index<arr->length_);
-    return arr->values_[index];
+void ArrayDestroy(Array *arr){
+    free(arr->values_);
+    free(arr);
 }

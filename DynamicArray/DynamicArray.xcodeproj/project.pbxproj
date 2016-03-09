@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0933D571C9057E400FA0373 /* Object.c in Sources */ = {isa = PBXBuildFile; fileRef = A0933D551C9057E300FA0373 /* Object.c */; };
+		A0933D5A1C905C4100FA0373 /* Integer.c in Sources */ = {isa = PBXBuildFile; fileRef = A0933D581C905C4100FA0373 /* Integer.c */; };
 		A0BF8F3B1C8EFD9C00A57B1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BF8F3A1C8EFD9C00A57B1C /* main.m */; };
 		A0BF8F431C8F06E500A57B1C /* Array.c in Sources */ = {isa = PBXBuildFile; fileRef = A0BF8F411C8F06E500A57B1C /* Array.c */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A0933D551C9057E300FA0373 /* Object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Object.c; sourceTree = "<group>"; };
+		A0933D561C9057E300FA0373 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		A0933D581C905C4100FA0373 /* Integer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Integer.c; sourceTree = "<group>"; };
+		A0933D591C905C4100FA0373 /* Integer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Integer.h; sourceTree = "<group>"; };
 		A0BF8F371C8EFD9C00A57B1C /* DynamicArray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicArray; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0BF8F3A1C8EFD9C00A57B1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A0BF8F411C8F06E500A57B1C /* Array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Array.c; sourceTree = "<group>"; };
@@ -63,6 +69,10 @@
 				A0BF8F3A1C8EFD9C00A57B1C /* main.m */,
 				A0BF8F411C8F06E500A57B1C /* Array.c */,
 				A0BF8F421C8F06E500A57B1C /* Array.h */,
+				A0933D551C9057E300FA0373 /* Object.c */,
+				A0933D561C9057E300FA0373 /* Object.h */,
+				A0933D581C905C4100FA0373 /* Integer.c */,
+				A0933D591C905C4100FA0373 /* Integer.h */,
 			);
 			path = DynamicArray;
 			sourceTree = "<group>";
@@ -123,7 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0933D5A1C905C4100FA0373 /* Integer.c in Sources */,
 				A0BF8F3B1C8EFD9C00A57B1C /* main.m in Sources */,
+				A0933D571C9057E400FA0373 /* Object.c in Sources */,
 				A0BF8F431C8F06E500A57B1C /* Array.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
