@@ -1,8 +1,8 @@
 //
 //  main.m
-//  LinkList
+//  DynamicArray
 //
-//  Created by 陈培升 on 16/3/4.
+//  Created by 陈培升 on 16/3/8.
 //  Copyright © 2016年 陈培升. All rights reserved.
 //
 
@@ -10,7 +10,6 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-
         
     }
     return 0;

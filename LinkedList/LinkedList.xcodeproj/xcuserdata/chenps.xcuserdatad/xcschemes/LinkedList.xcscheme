@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A04B60B51C89DA97008C9030"
-               BuildableName = "LinkList"
-               BlueprintName = "LinkList"
-               ReferencedContainer = "container:LinkList.xcodeproj">
+               BlueprintIdentifier = "A0E3E3831C8DA8A400A6B5A2"
+               BuildableName = "LinkedList"
+               BlueprintName = "LinkedList"
+               ReferencedContainer = "container:LinkedList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A04B60B51C89DA97008C9030"
-            BuildableName = "LinkList"
-            BlueprintName = "LinkList"
-            ReferencedContainer = "container:LinkList.xcodeproj">
+            BlueprintIdentifier = "A0E3E3831C8DA8A400A6B5A2"
+            BuildableName = "LinkedList"
+            BlueprintName = "LinkedList"
+            ReferencedContainer = "container:LinkedList.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A04B60B51C89DA97008C9030"
-            BuildableName = "LinkList"
-            BlueprintName = "LinkList"
-            ReferencedContainer = "container:LinkList.xcodeproj">
+            BlueprintIdentifier = "A0E3E3831C8DA8A400A6B5A2"
+            BuildableName = "LinkedList"
+            BlueprintName = "LinkedList"
+            ReferencedContainer = "container:LinkedList.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A04B60B51C89DA97008C9030"
-            BuildableName = "LinkList"
-            BlueprintName = "LinkList"
-            ReferencedContainer = "container:LinkList.xcodeproj">
+            BlueprintIdentifier = "A0E3E3831C8DA8A400A6B5A2"
+            BuildableName = "LinkedList"
+            BlueprintName = "LinkedList"
+            ReferencedContainer = "container:LinkedList.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
