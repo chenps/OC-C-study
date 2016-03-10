@@ -9,7 +9,7 @@
 #include "creatList.h"
 #include <stdlib.h>
 
-Node *CreatNoe(int data,Node *pre,Node *next){
+Node *CreatNode(int data,Node *pre,Node *next){
     Node *node = malloc(sizeof(Node));
     node->data = data;
     node->pre = pre;

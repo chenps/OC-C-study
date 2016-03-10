@@ -20,6 +20,6 @@ typedef struct Node_{
     struct Node_ *pre;
 }Node;
 
-Node *CreatNoe(int data,Node *pre,Node *next);
+Node *CreatNode(int data,Node *pre,Node *next);
 
 #endif /* creatList_h */
