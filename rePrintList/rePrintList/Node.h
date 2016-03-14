@@ -10,6 +10,7 @@
 #define Node_h
 
 #include <stdio.h>
+#include "Array.h"
 
 //定义链表节点结构；
 typedef struct Node_{
@@ -19,6 +20,7 @@ typedef struct Node_{
 
 Node *creatNode(int data,Node *next);
 Node *creatList(int i);
+Node *creatReList(Array *arr);
 void printList(Node *first);
 
 #endif /* Node_h */

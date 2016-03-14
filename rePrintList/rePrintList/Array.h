@@ -8,9 +8,9 @@
 
 #ifndef Array_h
 #define Array_h
-
 #include <stdio.h>
 
+//定义动态数组结构;
 typedef struct Array_{
     int length_;
     int capacity_;

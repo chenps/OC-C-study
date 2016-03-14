@@ -8,6 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+//               类               接口
+//Objective-c    @interface      @protocal (协议)
+//Swift          class           prototal
+//Java           class           interface
+
+
+
+
+
+@interface <#class name#> : <#superclass#>
+
+@end
+
+
+
+
+
+
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...

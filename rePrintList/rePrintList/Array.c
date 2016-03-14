@@ -7,10 +7,10 @@
 //
 
 #include "Array.h"
-
 #include <stdlib.h>
 #include <string.h>
 
+//定义创建动态数组函数；
 Array *creatArr(){
     Array *arr = malloc(sizeof(Array));
     arr->length_ = 0;
@@ -19,6 +19,7 @@ Array *creatArr(){
     return arr;
 }
 
+//为动态数组添加元素函数;
 void arrAdd(Array *arr,int value){
     if (arr->length_ >= arr->capacity_) {
         arr->capacity_*=2;
