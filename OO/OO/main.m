@@ -7,30 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Hello.h"
 //               类               接口
 //Objective-c    @interface      @protocal (协议)
 //Swift          class           prototal
 //Java           class           interface
 
 
-
-
-
-@interface <#class name#> : <#superclass#>
-
-@end
-
-
-
-
-
-
-
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Hello * h = [[Hello alloc] init];
+        [h sayHello];
+        [Hello staticSayHello];
+        [h sayHelloTo:@"chen" name2:@"chen1"];
     }
     return 0;
 }
