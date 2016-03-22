@@ -7,32 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Node.h"
-#import "Array.h"
+#import "class.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
-        Node *list = creatList(100);
-        
-        printList(list);
-        
-        
-        Array *arr = creatArr();
-        
-        
-        
-        for (; list!=NULL; list=list->next) {
-            arrAdd(arr, list->data);
-        }
-        
-        
-        
-        for (int j=arr->length_-1;j>=0;j--) {
-            
-            printf("%d\n",arr->values_[j]);
-            
-        }
-        
+        man *s = malloc(sizeof(man));
+        s->age_=8;
+        s->name="chen";
+        say *c = [[say alloc] init:@"chen" age:8];
+        NSLog(@"%@,%d",[c getName],[c getAge]);
     }
     return 0;
 }

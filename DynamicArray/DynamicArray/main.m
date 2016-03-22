@@ -20,16 +20,16 @@ int main(int argc, const char * argv[]) {
 //        Object *obj = malloc(sizeof(Object));
 //        ObjectRetain(obj);
         
-//        Array *arr = ArrayCreat();
-//        for (int i=0; i<100; i++) {
-//            ArrayAdd(arr,"Hello World");
-//        }
-//        
-//        for (int j=0; j<arr->length_; j++) {
-//            printf("%s\n",ArrayGet(arr, j));
-//        }
-//        
-//        ArrayDestroy(arr);
+        Array *arr = ArrayCreat();
+        for (int i=0; i<100; i++) {
+            ArrayAdd(arr,(Object *)"Hello World");
+        }
+        
+        for (int j=0; j<=arr->length_; j++) {
+            printf("%s\n",(char *)ArrayGet(arr, j));
+        }
+        
+        ArrayDestroy(arr);
     }
     return 0;
 }

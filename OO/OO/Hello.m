@@ -1,26 +1,45 @@
 //
-//  Hello.m
+//  hello.m
 //  OO
 //
-//  Created by 陈培升 on 16/3/14.
+//  Created by 陈培升 on 16/3/20.
 //  Copyright © 2016年 陈培升. All rights reserved.
 //
 
-#import "Hello.h"
+#import "hello.h"
 
-@implementation Hello
-
-+(void)staticSayHello{
-    NSLog(@"Hello chen\n");
+@implementation hello{
+    NSString * name_;
+    int age_;
 }
 
--(void)sayHello{
-    NSLog(@"Hello World\n");
+-(instancetype)init:(NSString *)name age:(int)age;
+{
+    self = [super init];
+    if (self) {
+        name_ = name;
+        age_ = age;
+        NSLog(@"%@,%d is init",name_,age_);
+    }
+    return self;
 }
 
--(void)sayHelloTo:(NSString *)name name2:(NSString *)name1{
-    NSLog(@"hello,%@,%@\n",name,name1);
++(void)sayHi{
+    NSLog(@"Hi Objective-C\n");
 }
 
+-(void)sayHelloTO:(NSString *)name age:(int)age{
+    name_ = name;
+    age_ = age;
+    NSLog(@"Hello %@,your age is %d\n",name_,age_);
+}
+
+-(int)getAge{
+    return age_;
+}
+
+-(NSString *)getName{
+    return name_;
+}
 
 @end

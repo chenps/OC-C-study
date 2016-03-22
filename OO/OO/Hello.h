@@ -1,19 +1,31 @@
 //
-//  Hello.h
+//  hello.h
 //  OO
 //
-//  Created by 陈培升 on 16/3/14.
+//  Created by 陈培升 on 16/3/20.
 //  Copyright © 2016年 陈培升. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "human.h"
 
-@interface Hello : NSObject
+typedef enum : NSUInteger {
+    Gender_Male,
+    Gender_Female
+} Gender;
 
--(void)sayHello;
+@interface hello : NSObject <human>
 
-+(void)staticSayHello;
+-(instancetype)init:(NSString *)name age:(int)age;
 
--(void)sayHelloTo:(NSString *)name name2:(NSString *)name1;
++(void)sayHi;
+
+-(void)sayHelloTO:(NSString *)name age:(int)age;
+
+-(int)getAge;
+
+-(NSString *)getName;
+
+@property Gender gender;
 
 @end

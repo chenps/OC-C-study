@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Hello.h"
+#import "hello.h"
+
+
 //               类               接口
 //Objective-c    @interface      @protocal (协议)
 //Swift          class           prototal
@@ -16,10 +18,8 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Hello * h = [[Hello alloc] init];
-        [h sayHello];
-        [Hello staticSayHello];
-        [h sayHelloTo:@"chen" name2:@"chen1"];
+        hello * h = [[hello alloc] init:@"chenps" age:8];
+        [hello sayHi];
     }
     return 0;
 }
