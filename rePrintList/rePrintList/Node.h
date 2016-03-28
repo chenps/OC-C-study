@@ -1,26 +1,27 @@
 //
-//  Node.h
+//  node.h
 //  rePrintList
 //
-//  Created by 陈培升 on 16/3/14.
+//  Created by 陈培升 on 16/3/28.
 //  Copyright © 2016年 陈培升. All rights reserved.
 //
 
-#ifndef Node_h
-#define Node_h
+#ifndef node_h
+#define node_h
 
 #include <stdio.h>
-#include "Array.h"
-
-//定义链表节点结构；
+#include <stdlib.h>
 typedef struct Node_{
     int data;
     struct Node_ *next;
-} Node;
+}Node;
 
 Node *creatNode(int data,Node *next);
-Node *creatList(int i);
-Node *creatReList(Array *arr);
+
+Node *creatList(int firstData,int endData);
+
 void printList(Node *first);
 
-#endif /* Node_h */
+void rePrintList(Node *first);
+
+#endif /* node_h */
