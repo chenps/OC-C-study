@@ -21,13 +21,21 @@ int main(int argc, const char * argv[]) {
 //        ObjectRetain(obj);
         
         Array *arr = ArrayCreat();
-        for (int i=0; i<100; i++) {
-            ArrayAdd(arr,(Object *)"Hello World");
-        }
+        ArrayAdd(arr,(AnyPointer)"chen");
+        ArrayAdd(arr,(AnyPointer)"chen");
+        ArrayAdd(arr,(AnyPointer)"chen");
+        ArrayAdd(arr,(AnyPointer)"chen");
+        ArrayAdd(arr,(AnyPointer)"chen");
+        ArrayAdd(arr,(AnyPointer)"chen");
+        ArrayAdd(arr,(AnyPointer)"chen");
+        ArrayAdd(arr,(AnyPointer)"chen");
+        ArrayAdd(arr,(AnyPointer)"chen");
         
-        for (int j=0; j<=arr->length_; j++) {
-            printf("%s\n",(char *)ArrayGet(arr, j));
-        }
+        printf("%s\n",(char *)ArrayGet(arr, 0));
+        printf("%s\n",(char *)ArrayGet(arr, 1));
+        printf("%s\n",(char *)ArrayGet(arr, 2));
+        printf("%s\n",(char *)ArrayGet(arr, 3));
+        printf("%s\n",(char *)ArrayGet(arr, 4));
         
         ArrayDestroy(arr);
     }

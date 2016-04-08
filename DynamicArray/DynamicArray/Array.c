@@ -11,16 +11,11 @@
 #include <string.h>
 #include <assert.h>
 
-
-static AnyPointer *allocMemoryByCapacity(Array *arr){
-    return malloc(sizeof(AnyPointer)*arr->capacity_);
-}
-
 Array *ArrayCreat(){
     Array *arr=malloc(sizeof(Array));
     arr->length_=0;
     arr->capacity_=32;
-    arr->values_=allocMemoryByCapacity(arr);
+    arr->values_=malloc(sizeof(AnyPointer)*arr->capacity_);
     return arr;
 }
 
@@ -34,7 +29,7 @@ void ArrayAdd(Array *arr,AnyPointer value){
     if (arr->length_>=arr->capacity_) {
         arr->capacity_*=2;
         AnyPointer *oldValues = arr->values_;
-        arr->values_=allocMemoryByCapacity(arr);
+        arr->values_=malloc(sizeof(AnyPointer)*arr->capacity_);
         memcpy(arr->values_,oldValues,arr->length_*sizeof(AnyPointer));
         free(oldValues);
     }
@@ -53,7 +48,7 @@ void ArrayRemove(Array *arr,int index){
 }
 
 AnyPointer ArrayGet(Array *arr, int index){
-    assert(index>=0&&index<arr->length_);//断言
+    assert(index>=0&&index<=arr->length_);//断言
     return arr->values_[index];
 }
 
@@ -61,4 +56,5 @@ AnyPointer ArrayGet(Array *arr, int index){
 void ArrayDestroy(Array *arr){
     free(arr->values_);
     free(arr);
+    printf("arr was destroyd\n");
 }
